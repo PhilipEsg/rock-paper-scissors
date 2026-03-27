@@ -72,8 +72,6 @@ function playGame() {
 
     let comp_choice = "";   // computer's choice
     let user_choice = "";   // user's choice
-    let comp_score = 0;     // initial computer's score during gameplay
-    let user_score = 0;     // initial user's score during gameplay
     let round_num = 0;      // current round number
 
     while(round_num < 5) {
@@ -98,6 +96,8 @@ function playGame() {
 }
 
 
+let comp_score = 0;     // initial computer's score during gameplay
+let user_score = 0;     // initial user's score during gameplay
 playGame();
 
 
