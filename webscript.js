@@ -22,6 +22,10 @@ function getHumanChoice() {
     let user_choice = "";
     user_choice = prompt("Enter a choice (rock, paper, scissors): ");
 
+    while (user_choice !== "rock" && user_choice !== "paper" && user_choice !== "scissors") {
+        user_choice = prompt("Invalid choice. Try again.");
+    }
+
     return user_choice;
 }
 
