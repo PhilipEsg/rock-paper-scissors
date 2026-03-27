@@ -98,5 +98,8 @@ function playGame() {
 }
 
 
+playGame();
+
+
 
 
