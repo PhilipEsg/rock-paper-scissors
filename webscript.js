@@ -3,7 +3,7 @@ function getComputerChoice() {
     let comp_choice = "";
     num = Math.random();
     
-    if(num >=0 && num < 0.33) {
+    if(num >= 0 && num < 0.33) {
         comp_choice = "rock";
     }
     else if(num >= 0.33 && num < 0.66) {
