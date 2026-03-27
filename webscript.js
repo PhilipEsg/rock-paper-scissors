@@ -82,7 +82,10 @@ function playGame() {
         playRound(user_choice, comp_choice);
         console.log("Player score: ", user_score);
         console.log("Computer score: ", comp_score);
+        
+        round_num = round_num + 1;
     }
+
     if(user_score > comp_score) {
         console.log("Congratulations! You won!");
     }
