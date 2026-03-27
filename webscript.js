@@ -1,3 +1,4 @@
+// Get computer's choice for game
 function getComputerChoice() {
     let num = 0;
     let comp_choice = "";
@@ -15,7 +16,19 @@ function getComputerChoice() {
     return comp_choice; 
 }
 
-let comp_choice = "";
-comp_choice = getComputerChoice();
 
-console.log(comp_choice);
+
+function getHumanChoice() {
+    let user_choice = "";
+    user_choice = prompt("Enter a choice (rock, paper, scissors): ");
+
+    return user_choice;
+}
+
+
+
+let comp_choice = "";
+let user_choice = "";
+comp_choice = getComputerChoice();
+user_choice = getHumanChoice();
+console.log(user_choice);
