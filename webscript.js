@@ -77,4 +77,5 @@ comp_choice = getComputerChoice();
 user_choice = getHumanChoice();
 
 playRound(user_choice, comp_choice);
-console.log('user score: ${user_score}, computer score: ${comp_score}');
+console.log("Player score: ", user_score);
+console.log("Computer score: ", comp_score)
