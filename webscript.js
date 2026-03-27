@@ -68,14 +68,32 @@ function playRound(user_choice, comp_choice) {
 
 
 
-let comp_choice = "";   // computer's choice
-let user_choice = "";   // user's choice
-let comp_score = 0;     // initial computer's score during gameplay
-let user_score = 0;     // initial user's score during gameplay
+function playGame() {
 
-comp_choice = getComputerChoice();
-user_choice = getHumanChoice();
+    let comp_choice = "";   // computer's choice
+    let user_choice = "";   // user's choice
+    let comp_score = 0;     // initial computer's score during gameplay
+    let user_score = 0;     // initial user's score during gameplay
+    let round_num = 0;      // current round number
 
-playRound(user_choice, comp_choice);
-console.log("Player score: ", user_score);
-console.log("Computer score: ", comp_score)
+    while(round_num < 5) {
+        comp_choice = getComputerChoice();
+        user_choice = getHumanChoice();
+        playRound(user_choice, comp_choice);
+        console.log("Player score: ", user_score);
+        console.log("Computer score: ", comp_score);
+    }
+    if(user_score > comp_score) {
+        console.log("Congratulations! You won!");
+    }
+    else if(user_score < comp_score) {
+        console.log("Sorry! You lost!");
+    }
+    else {
+        console.log("Tie game!");
+    }
+}
+
+
+
+
