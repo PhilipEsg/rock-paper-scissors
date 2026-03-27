@@ -6,6 +6,6 @@ function getComputerChoice() {
 }
 
 let random_num = 0;
-random_num = getComputerChoice;
+random_num = getComputerChoice();
 
 console.log(random_num);
