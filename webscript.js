@@ -38,7 +38,7 @@ function playGame() {
 
     let comp_choice = "";   // computer's choice
     let user_choice = "";   // user's choice
-    let round_num = 0;      // current round number
+   // let round_num = 0;      // current round number
     let comp_score = 0;     // initial computer's score during gameplay
     let user_score = 0;     // initial user's score during gameplay
 
@@ -80,15 +80,15 @@ function playGame() {
 
 
 
-    while(round_num < 5) {
-        comp_choice = getComputerChoice();
-        user_choice = getHumanChoice();
-        playRound(user_choice, comp_choice);
-        console.log("Player score: ", user_score);
-        console.log("Computer score: ", comp_score);
+//    while(round_num < 5) {
+    comp_choice = getComputerChoice();
+    user_choice = getHumanChoice();
+    playRound(user_choice, comp_choice);
+    console.log("Player score: ", user_score);
+    console.log("Computer score: ", comp_score);
         
-        round_num = round_num + 1;
-    }
+  //      round_num = round_num + 1;
+ //   }
 
     if(user_score > comp_score) {
         console.log("Congratulations! You won!");
