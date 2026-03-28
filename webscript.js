@@ -19,6 +19,7 @@ function getComputerChoice() {
 
 
 //Get user's choice for game
+/*
 function getHumanChoice() {
     let user_choice = "";
     user_choice = prompt("Enter a choice (rock, paper, scissors): ");
@@ -26,10 +27,10 @@ function getHumanChoice() {
     while (user_choice !== "rock" && user_choice !== "paper" && user_choice !== "scissors") {
         user_choice = prompt("Invalid choice. Try again.");
     }
-
     return user_choice;
+    
 }
-
+*/
 
 
 
@@ -82,8 +83,9 @@ function playGame() {
 
 //    while(round_num < 5) {
     comp_choice = getComputerChoice();
-    user_choice = getHumanChoice();
-    playRound(user_choice, comp_choice);
+    document.getElementById("rock").addEventListener("click", playRound("rock", comp_choice));
+    document.getElementById("paper").addEventListener("click", playRound("paper", comp_choice));
+    document.getElementById("scissors").addEventListener("click", playRound("scissors", comp_choice));
     console.log("Player score: ", user_score);
     console.log("Computer score: ", comp_score);
         
